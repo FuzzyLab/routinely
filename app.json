@@ -1,0 +1,6 @@
+{
+  "name": "Dietinely",
+  "description": "Diet Routines Social Networking",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}
