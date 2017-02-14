@@ -59,10 +59,10 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.4-1200-jdbc4</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<plugins>
