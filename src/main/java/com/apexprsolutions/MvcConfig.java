@@ -33,7 +33,13 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/**").addResourceLocations("classpath:/templates/");
+		registry.addResourceHandler("/csv/*").addResourceLocations("classpath:/templates/csv/");
+		registry.addResourceHandler("/js/*").addResourceLocations("classpath:/templates/js/");
+		registry.addResourceHandler("/img/*").addResourceLocations("classpath:/templates/img/");
+		registry.addResourceHandler("/less/*").addResourceLocations("classpath:/templates/less/");
+		registry.addResourceHandler("/vendor/jquery/*").addResourceLocations("classpath:/templates/vendor/jquery/");
+		registry.addResourceHandler("/vendor/device-mockups/*").addResourceLocations("classpath:/templates/vendor/device-mockups/");
+		registry.addResourceHandler("/vendor/***").addResourceLocations("classpath:/templates/vendor/**");
 	}
 
 }
